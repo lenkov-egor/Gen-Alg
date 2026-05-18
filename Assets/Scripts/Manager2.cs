@@ -306,12 +306,6 @@ public class Manager2 : MonoBehaviour
     }
 
 
-
-
-
-
-
-
     IEnumerator SolveTSP()
     {
         loadingScreen.SetActive(true);
@@ -380,29 +374,6 @@ public class Manager2 : MonoBehaviour
         }
     }
 
-    //IEnumerable<List<int>> GetPermutations(List<int> list, int length)
-    //{
-    //    if (length == 1) yield return list;
-    //    else
-    //    {
-    //        for (int i = 0; i < length; i++)
-    //        {
-    //            foreach (var perm in GetPermutations(list, length - 1))
-    //            {
-    //                yield return perm;
-    //            }
-    //            list = Swap(list, length - 1, i);
-    //        }
-    //    }
-    //}
-
-    //List<int> Swap(List<int> list, int i, int j)
-    //{
-    //    int temp = list[i];
-    //    list[i] = list[j];
-    //    list[j] = temp;
-    //    return list;
-    //}
 
     //Длинна пути
     float CalculatePathDistance(List<int> path)
